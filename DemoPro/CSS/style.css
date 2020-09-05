@@ -1,0 +1,128 @@
+body {
+    /*background-color: lightblue;*/
+    background-image: url("https://i.pinimg.com/originals/ff/67/39/ff6739f003f98d14c20e880e542d1077.png");
+    background-size: 100% 100%;
+  }
+  .HEADER{
+    background-image: url("https://i.giphy.com/media/3oEjHYlwvUK5p9AIbm/giphy.webp");
+    height: 400px;
+    width: 100%;
+    opacity: 0.75;
+  }
+  .opening{
+    text-align: center;
+    color: crimson;
+  }
+.container-1{
+    /*background-color: #898DD1;*/
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    border:2px solid cadetblue;
+}
+.container-2{
+  /*background-color: #D1C889;*/
+  border: 2px solid greenyellow;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  border:2px solid olive;
+}
+.container-3{
+  /*background-color: #5ba0a5;*/
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  border:2px solid cadetblue;
+}
+.container-4{
+  /*background-color: #ad8fa1;*/
+  border: 1px solid black;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  border:2px solid rgb(95, 147, 160);
+}
+.container-5{
+  text-align: center;
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+}
+.box-container-1{
+    text-align: center; 
+    display: flex;
+    border: 0.5px solid rgb(17, 124, 13);
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.box-container-1 div{
+    display: flex;
+    padding: 10px;
+    /*border: 1px solid black;*/
+    align-items: center;
+}
+
+.box-container-2,.box-container-3,.flex-box-rps,
+.box-change-color,.blackjack-row1,.blackjack-row2,.blackjack-row3{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid red;
+
+}
+
+.blackjack-row1{
+  background: url('https://www.desktopbackground.org/download/o/2014/07/18/795283_card-game-backgrounds-wallpapers-walldevil-best-free-hd-desktop_1920x1080_h.jpg' );
+  color: #ffffff;
+  
+}
+.blackjack-row2{
+  background: url('https://www.solitaire-web-app.com/solitaire/images/backgrounds/1920x1200/green_felt.jpg' );
+  color: #ffffff;
+  
+}
+.blackjack-row1 div{
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height:  350px;
+}
+.blackjack-row1 img{
+  width: 20%;
+  padding: 20 px;
+  border: 2px solid rgb(9, 68, 9); 
+}
+
+.blackjack-row2 button{
+  border: 1 px solid black;
+}
+.blackjack-row2 div{
+  border: 1px solid black;
+  justify-content: space-around;
+  padding: 10px;
+   
+}
+
+table, th,td{
+  padding: 5px;
+  border: 1px solid white;
+}
+
+
+
+.box-container-2 img,.box-container-3{
+  border: 1px solid green;
+  padding: 10px;
+  box-shadow: 1px 10px 30px rgb(66, 46, 20);
+}
+
+.flex-box-rps img:hover{
+  box-shadow: 1px 10px 30px rgb(63, 26, 197);
+}

@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="DemoPro/CSS/style.css">
+    <title>JavaScriptProject</title>
+    
+</head>
+<body>
+
+    <div class="HEADER">
+    </div>
+    <div class="opening">
+        <p style="color: #522500;"><b>Let's try some interesting Challange!</b></p>
+    </div>
+
+    <div class="container-1">
+        <h2 style="color: rgb(0, 0, 0)">Challange 1: Your age in days</h2>
+        <div class="box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageDay()"> Click here</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="box-container-1">
+            <div id="box-result"></div>
+        </div>
+    
+    </div>
+    <div class="container-2">
+        <p style="color: #421b00;"><b>Are you Naruto fan!?</b></p>
+        <h2 style="color: rgb(0, 0, 0)">Challange 2: Shadow Clone Generator</h2>
+        <button class="btn btn-success" id="clone-generator" onclick="generateClone()">Generate Clones</button>
+        <button class="btn btn-danger" id="clone-end" onclick="resetEnd()">End of Chakra?</button>
+        <div class="box-container-2" id="cloneGen">
+        </div>
+        <div class="box-container-3" id="ResetcloneGen">
+        </div>
+
+    </div>
+    <div class="container-3" id="contaner-3-id">
+        <h2 style="color: rgb(0, 0, 0)">Challange 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://www.pngitem.com/pimgs/m/238-2383333_angle-white-rock-cartoon-rock-transparent-hd-png.png" alt="ROCK" height="150" width="150" onclick="rpsGame(this)">
+            <img id="paper" src="https://www.pngfind.com/pngs/m/180-1806774_collection-of-notebook-cartoon-piece-of-paper-hd.png" alt="Paper" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="https://banner2.cleanpng.com/20180612/avw/kisspng-hand-rockpaperscissors-computer-icons-clip-a-botten-5b207ab13ddf51.5333045115288552172534.jpg" alt="Scissors" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+        <div class="flex-box-rps-btn" id="flex-box-rps-btn_div">
+            <button class="btn btn-primary" id="reset" onclick="reset()"> Reload</button>
+            
+        </div>
+    </div>
+
+    <div class="container-4" >
+        <h2 id="change-mycolor" style="color: rgb(0, 0, 0)">Challange 4: Change color of all Buttons</h2>
+        <div class="box-change-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                    
+                </select>
+            </form>
+            <button class="btn btn-primary">See</button>
+            <button class="btn btn-danger">Here</button>
+            <button class="btn btn-warning">Different</button>
+            <button class="btn btn-success">Colors</button>
+                
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2 style="color: rgb(0, 0, 0)">Challange 5: Black Jack</h2>
+        <h3><span id="blackjack-result">PLAY!</span></h3>
+        <div class="blackjack-row1">
+            <div id="yourbox">
+                <h4>You: <span id="your-black-jack-result">0</span></h4>
+            </div>
+                
+            <div id="dealerbox">
+                <h4>Dealer: <span id="dealer-black-jack-result">0</span></h4>
+            </div>
+        </div>
+    
+        <div class="blackjack-row2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-btn" >Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-btn">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-btn">Deal</button>
+            </div>
+        </div>
+
+        <div class="blackjack-row3">
+            <table>
+                <tr>
+                    <th style="color: rgb(12, 187, 56)">Wins</th>
+                    <th style="color: rgb(243, 30, 30)">Loses</th>
+                    <th style="color: rgb(248, 252, 10)">Draws</th>
+                </tr>
+                <tr>
+                    <td style="color: rgb(128, 209, 128)"><span id="wins">0</span></td>
+                    <td style="color: rgb(172, 127, 127)"><span id="losses">0</span></td>
+                    <td style="color: rgb(216, 218, 103)"><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="DemoPro/JS/Js.js"></script>
+    
+</body>
+</html>
